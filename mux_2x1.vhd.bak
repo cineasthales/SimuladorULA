@@ -1,0 +1,14 @@
+LIBRARY	IEEE;
+USE IEEE.std_logic_1164.all;
+
+ENTITY mux_2x1 IS
+  PORT(
+  a: in std_logic_vector(1 downto 0);
+  c: in std_logic;
+  s: out std_logic
+  );
+end mux_2x1;
+architecture arq_mux_2x1 of mux_2x1 is
+begin 
+	s <= (((NOT c) AND a(0)) OR (c AND a(1)));
+end arq_mux_2x1;

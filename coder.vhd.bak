@@ -1,0 +1,29 @@
+LIBRARY	IEEE;
+USE IEEE.std_logic_1164.all;
+
+ENTITY coder IS
+  PORT(
+  a: in std_logic_vector(3 downto 0);
+  s: in std_logic_vector(15 downto 0)
+  );
+END coder;
+ARCHITECTURE arq_coder OF coder IS
+BEGIN 
+	WITH a SELECT
+	s <=	"0000000000000000" WHEN "0000", -- A + B 
+			"0000000000000001" WHEN "0001", -- 2A + B 
+			"0000000000000010" WHEN "0010", -- B * 2 
+			"0010000000000011" WHEN "0011", -- A - 2B 
+			"0000000000000100" WHEN "0100", -- A OR B 
+			"0000000000000101" WHEN "0101", -- A + B + B 
+			"0100000000000110" WHEN "0110", -- !B + 1 
+			"0000000000000111" WHEN "0111", -- Desloca 2 Bits Esquerda 
+			"0000000000001000" WHEN "1000", -- Desloca 1 Bit Direita 
+			"0000000000001001" WHEN "1001", -- A AND B 
+			"0000000000001010" WHEN "1010", -- A XOR B 
+			"1000000000001011" WHEN "1011", -- A - B 
+			"0000000000001100" WHEN "1100", -- S = A 
+			"0000000000001101" WHEN "1101", -- S = B 
+			"0000000000001110" WHEN "1110", -- ? (A*B)
+			"0000000000001111" WHEN "1111"; -- ? (A/B)
+END arq_coder;

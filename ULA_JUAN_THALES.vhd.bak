@@ -1,0 +1,21 @@
+LIBRARY	IEEE;
+USE IEEE.std_logic_1164.all;
+
+ENTITY ULA_JUAN_THALES IS
+  PORT(
+  a: in std_logic_vector(3 downto 0); -- entrada A
+  b: in std_logic_vector(3 downto 0); -- entrada B
+  f: in std_logic_vector(3 downto 0); -- seletor de operação
+  s: out std_logic_vector(3 downto 0); -- saída
+  v: std_logic; -- flag overflow
+  z: std_logic; -- flag zero
+  n: std_logic -- flag negativo
+  );
+END ULA_JUAN_THALES;
+
+ARCHITECTURE arq_ULA_JUAN_THALES OF ULA_JUAN_THALES IS
+BEGIN
+
+
+
+END arq_ULA_JUAN_THALES;

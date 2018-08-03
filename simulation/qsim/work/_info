@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Desktop\ULA\simulation\qsim
+vULA_JUAN_THALES
+Z1 I3zZHED?BfCKDFf8`CS[`O1
+Z2 VUeP<DA<O2kjj5z;c18KZ23
+Z3 dC:\Users\Aluno\Desktop\ULA\simulation\qsim
+Z4 w1490292686
+Z5 8ULA_JUAN_THALES.vo
+Z6 FULA_JUAN_THALES.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|ULA_JUAN_THALES.vo|
+Z9 o-work work -O0
+Z10 n@u@l@a_@j@u@a@n_@t@h@a@l@e@s
+!i10b 1
+Z11 !s100 kzJj]]QK1d7kjdnVPn`gI0
+!s85 0
+Z12 !s108 1490292686.678000
+Z13 !s107 ULA_JUAN_THALES.vo|
+!s101 -O0
+vULA_JUAN_THALES_vlg_check_tst
+!i10b 1
+Z14 !s100 UK>80mkGl7CEO4DIa?J>_3
+Z15 I:=CAj5KYhOOS47blZXkhN3
+Z16 Vb00QKZLVT;<jjCJS]RJbU0
+R3
+Z17 w1490292685
+Z18 8ULA_JUAN_THALES.vt
+Z19 FULA_JUAN_THALES.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z20 !s108 1490292686.897000
+Z21 !s107 ULA_JUAN_THALES.vt|
+Z22 !s90 -work|work|ULA_JUAN_THALES.vt|
+!s101 -O0
+R9
+Z23 n@u@l@a_@j@u@a@n_@t@h@a@l@e@s_vlg_check_tst
+vULA_JUAN_THALES_vlg_sample_tst
+!i10b 1
+Z24 !s100 S@m5L0nR9f5<>dgHj67[@3
+Z25 I1SaUS2^g=j>Gd^MAc:RPh2
+Z26 VOLVL]ec3UISYoM7DLE_Fz1
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@u@l@a_@j@u@a@n_@t@h@a@l@e@s_vlg_sample_tst
+vULA_JUAN_THALES_vlg_vec_tst
+!i10b 1
+!s100 c>45<;e3Wa`2c@lNR0mVR0
+IbjC8>FW58j23VQ_A>iD=I2
+Z28 VAA_AA2C>QWIHbS:oV`5ZA2
+R3
+R17
+R18
+R19
+Z29 L0 550
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z30 n@u@l@a_@j@u@a@n_@t@h@a@l@e@s_vlg_vec_tst

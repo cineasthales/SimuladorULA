@@ -1,0 +1,44 @@
+LIBRARY	IEEE;
+USE IEEE.std_logic_1164.all;
+
+ENTITY somador_subtrator_4bits IS
+  PORT(
+  a, b: in std_logic_vector(3 downto 0);
+  control: in std_logic;
+  s: out std_logic_vector(3 downto 0);
+  overflow: out std_logic
+  );
+END somador_subtrator_4bits;
+
+ARCHITECTURE arq_somador_subtrator_4bits OF somador_subtrator_4bits IS
+
+SIGNAL c: std_logic_vector(4 downto 0);
+SIGNAL sub: std_logic_vector(3 downto 0);
+
+COMPONENT somador_completo
+  PORT (
+  a, b, c_in: in std_logic;
+  s, c_out: out std_logic
+  );
+END COMPONENT;
+
+BEGIN 
+	sub(0) <= b(0) XOR control;
+	sub(1) <= b(1) XOR control;
+	sub(2) <= b(2) XOR control;
+	sub(3) <= b(3) XOR control;
+	c(0) <= control;
+  soma1: somador_completo
+    port map(a => a(0), b => sub(0), c_in => c(0), s => s(0), c_out => c(1));
+    
+  soma2: somador_completo
+    port map(a => a(1), b => sub(1), c_in => c(1), s => s(1), c_out => c(2));
+    
+  soma3: somador_completo
+    port map(a => a(2), b => sub(2), c_in => c(2), s => s(2), c_out => c(3));
+    
+  soma4: somador_completo
+    port map(a => a(3), b => sub(3), c_in => c(3), s => s(3), c_out => c(4));
+   
+	overflow <= c(4) XOR c(3);
+end arq_somador_subtrator_4bits;

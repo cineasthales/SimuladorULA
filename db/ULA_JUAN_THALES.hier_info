@@ -1,0 +1,787 @@
+|ULA_JUAN_THALES
+a[0] => comb.IN0
+a[0] => comb.IN0
+a[0] => comb.IN0
+a[0] => somador_subtrator_4bits:a_mais_menos_b.a[0]
+a[0] => somador_subtrator_4bits:a_mais_a.a[0]
+a[0] => somador_subtrator_4bits:a_mais_a.b[0]
+a[0] => desloca_2:desloca2.a[0]
+a[0] => somador_subtrator_4bits:bx2_somasub_b.a[0]
+a[0] => mux_16x1:mux0.a[12]
+a[1] => comb.IN0
+a[1] => comb.IN0
+a[1] => comb.IN0
+a[1] => somador_subtrator_4bits:a_mais_menos_b.a[1]
+a[1] => somador_subtrator_4bits:a_mais_a.a[1]
+a[1] => somador_subtrator_4bits:a_mais_a.b[1]
+a[1] => desloca_2:desloca2.a[1]
+a[1] => somador_subtrator_4bits:bx2_somasub_b.a[1]
+a[1] => mux_16x1:mux1.a[12]
+a[2] => comb.IN0
+a[2] => comb.IN0
+a[2] => comb.IN0
+a[2] => somador_subtrator_4bits:a_mais_menos_b.a[2]
+a[2] => somador_subtrator_4bits:a_mais_a.a[2]
+a[2] => somador_subtrator_4bits:a_mais_a.b[2]
+a[2] => desloca_2:desloca2.a[2]
+a[2] => somador_subtrator_4bits:bx2_somasub_b.a[2]
+a[2] => mux_16x1:mux2.a[12]
+a[3] => comb.IN0
+a[3] => comb.IN0
+a[3] => comb.IN0
+a[3] => somador_subtrator_4bits:a_mais_menos_b.a[3]
+a[3] => somador_subtrator_4bits:a_mais_a.a[3]
+a[3] => somador_subtrator_4bits:a_mais_a.b[3]
+a[3] => desloca_2:desloca2.a[3]
+a[3] => somador_subtrator_4bits:bx2_somasub_b.a[3]
+a[3] => mux_16x1:mux3.a[12]
+b[0] => comb.IN1
+b[0] => comb.IN1
+b[0] => comb.IN1
+b[0] => somador_subtrator_4bits:a_mais_menos_b.b[0]
+b[0] => somador_subtrator_4bits:b_mais_b.a[0]
+b[0] => somador_subtrator_4bits:b_mais_b.b[0]
+b[0] => somador_subtrator_4bits:nega_b.b[0]
+b[0] => desloca_1:desloca1.a[0]
+b[0] => somador_subtrator_4bits:ax2_mais_b.b[0]
+b[0] => mux_16x1:mux0.a[13]
+b[1] => comb.IN1
+b[1] => comb.IN1
+b[1] => comb.IN1
+b[1] => somador_subtrator_4bits:a_mais_menos_b.b[1]
+b[1] => somador_subtrator_4bits:b_mais_b.a[1]
+b[1] => somador_subtrator_4bits:b_mais_b.b[1]
+b[1] => somador_subtrator_4bits:nega_b.b[1]
+b[1] => desloca_1:desloca1.a[1]
+b[1] => somador_subtrator_4bits:ax2_mais_b.b[1]
+b[1] => mux_16x1:mux1.a[13]
+b[2] => comb.IN1
+b[2] => comb.IN1
+b[2] => comb.IN1
+b[2] => somador_subtrator_4bits:a_mais_menos_b.b[2]
+b[2] => somador_subtrator_4bits:b_mais_b.a[2]
+b[2] => somador_subtrator_4bits:b_mais_b.b[2]
+b[2] => somador_subtrator_4bits:nega_b.b[2]
+b[2] => desloca_1:desloca1.a[2]
+b[2] => somador_subtrator_4bits:ax2_mais_b.b[2]
+b[2] => mux_16x1:mux2.a[13]
+b[3] => comb.IN1
+b[3] => comb.IN1
+b[3] => comb.IN1
+b[3] => somador_subtrator_4bits:a_mais_menos_b.b[3]
+b[3] => somador_subtrator_4bits:b_mais_b.a[3]
+b[3] => somador_subtrator_4bits:b_mais_b.b[3]
+b[3] => somador_subtrator_4bits:nega_b.b[3]
+b[3] => desloca_1:desloca1.a[3]
+b[3] => somador_subtrator_4bits:ax2_mais_b.b[3]
+b[3] => mux_16x1:mux3.a[13]
+f[0] => coder:codificador.a[0]
+f[1] => coder:codificador.a[1]
+f[2] => coder:codificador.a[2]
+f[3] => coder:codificador.a[3]
+s[0] <= seg7_2:dois7segmentos.s[0]
+s[1] <= seg7_2:dois7segmentos.s[1]
+s[2] <= seg7_2:dois7segmentos.s[2]
+s[3] <= seg7_2:dois7segmentos.s[3]
+s[4] <= seg7_2:dois7segmentos.s[4]
+s[5] <= seg7_2:dois7segmentos.s[5]
+s[6] <= seg7_2:dois7segmentos.s[6]
+s[7] <= seg7_2:dois7segmentos.s[7]
+s[8] <= seg7_2:dois7segmentos.s[8]
+s[9] <= seg7_2:dois7segmentos.s[9]
+s[10] <= seg7_2:dois7segmentos.s[10]
+s[11] <= seg7_2:dois7segmentos.s[11]
+s[12] <= seg7_2:dois7segmentos.s[12]
+s[13] <= seg7_2:dois7segmentos.s[13]
+saida[0] <= mux_16x1:mux0.s
+saida[1] <= mux_16x1:mux1.s
+saida[2] <= mux_16x1:mux2.s
+saida[3] <= mux_16x1:mux3.s
+v <= mux_16x1:over_flow.s
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+n <= mux_16x1:mux3.s
+
+
+|ULA_JUAN_THALES|coder:codificador
+a[0] => Mux0.IN19
+a[0] => Mux1.IN19
+a[0] => Mux2.IN19
+a[0] => s[0].DATAIN
+a[1] => Mux0.IN18
+a[1] => Mux1.IN18
+a[1] => Mux2.IN18
+a[1] => s[1].DATAIN
+a[2] => Mux0.IN17
+a[2] => Mux1.IN17
+a[2] => Mux2.IN17
+a[2] => s[2].DATAIN
+a[3] => Mux0.IN16
+a[3] => Mux1.IN16
+a[3] => Mux2.IN16
+a[3] => s[3].DATAIN
+s[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= <GND>
+s[5] <= <GND>
+s[6] <= <GND>
+s[7] <= <GND>
+s[8] <= <GND>
+s[9] <= <GND>
+s[10] <= <GND>
+s[11] <= <GND>
+s[12] <= <GND>
+s[13] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+s[14] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+s[15] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:a_mais_menos_b
+a[0] => somador_completo:soma1.a
+a[1] => somador_completo:soma2.a
+a[2] => somador_completo:soma3.a
+a[3] => somador_completo:soma4.a
+b[0] => sub[0].IN0
+b[1] => sub[1].IN0
+b[2] => sub[2].IN0
+b[3] => sub[3].IN0
+control => sub[0].IN1
+control => sub[1].IN1
+control => sub[2].IN1
+control => sub[3].IN1
+control => somador_completo:soma1.c_in
+s[0] <= somador_completo:soma1.s
+s[1] <= somador_completo:soma2.s
+s[2] <= somador_completo:soma3.s
+s[3] <= somador_completo:soma4.s
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:a_mais_menos_b|somador_completo:soma1
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:a_mais_menos_b|somador_completo:soma2
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:a_mais_menos_b|somador_completo:soma3
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:a_mais_menos_b|somador_completo:soma4
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:a_mais_a
+a[0] => somador_completo:soma1.a
+a[1] => somador_completo:soma2.a
+a[2] => somador_completo:soma3.a
+a[3] => somador_completo:soma4.a
+b[0] => sub[0].IN0
+b[1] => sub[1].IN0
+b[2] => sub[2].IN0
+b[3] => sub[3].IN0
+control => sub[0].IN1
+control => sub[1].IN1
+control => sub[2].IN1
+control => sub[3].IN1
+control => somador_completo:soma1.c_in
+s[0] <= somador_completo:soma1.s
+s[1] <= somador_completo:soma2.s
+s[2] <= somador_completo:soma3.s
+s[3] <= somador_completo:soma4.s
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:a_mais_a|somador_completo:soma1
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:a_mais_a|somador_completo:soma2
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:a_mais_a|somador_completo:soma3
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:a_mais_a|somador_completo:soma4
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:b_mais_b
+a[0] => somador_completo:soma1.a
+a[1] => somador_completo:soma2.a
+a[2] => somador_completo:soma3.a
+a[3] => somador_completo:soma4.a
+b[0] => sub[0].IN0
+b[1] => sub[1].IN0
+b[2] => sub[2].IN0
+b[3] => sub[3].IN0
+control => sub[0].IN1
+control => sub[1].IN1
+control => sub[2].IN1
+control => sub[3].IN1
+control => somador_completo:soma1.c_in
+s[0] <= somador_completo:soma1.s
+s[1] <= somador_completo:soma2.s
+s[2] <= somador_completo:soma3.s
+s[3] <= somador_completo:soma4.s
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:b_mais_b|somador_completo:soma1
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:b_mais_b|somador_completo:soma2
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:b_mais_b|somador_completo:soma3
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:b_mais_b|somador_completo:soma4
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:nega_b
+a[0] => somador_completo:soma1.a
+a[1] => somador_completo:soma2.a
+a[2] => somador_completo:soma3.a
+a[3] => somador_completo:soma4.a
+b[0] => sub[0].IN0
+b[1] => sub[1].IN0
+b[2] => sub[2].IN0
+b[3] => sub[3].IN0
+control => sub[0].IN1
+control => sub[1].IN1
+control => sub[2].IN1
+control => sub[3].IN1
+control => somador_completo:soma1.c_in
+s[0] <= somador_completo:soma1.s
+s[1] <= somador_completo:soma2.s
+s[2] <= somador_completo:soma3.s
+s[3] <= somador_completo:soma4.s
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:nega_b|somador_completo:soma1
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:nega_b|somador_completo:soma2
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:nega_b|somador_completo:soma3
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:nega_b|somador_completo:soma4
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|desloca_1:desloca1
+a[0] => ~NO_FANOUT~
+a[1] => s[0].DATAIN
+a[2] => s[1].DATAIN
+a[3] => s[2].DATAIN
+s[0] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= <GND>
+
+
+|ULA_JUAN_THALES|desloca_2:desloca2
+a[0] => s[2].DATAIN
+a[1] => s[3].DATAIN
+a[2] => ~NO_FANOUT~
+a[3] => ~NO_FANOUT~
+s[0] <= <GND>
+s[1] <= <GND>
+s[2] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:ax2_mais_b
+a[0] => somador_completo:soma1.a
+a[1] => somador_completo:soma2.a
+a[2] => somador_completo:soma3.a
+a[3] => somador_completo:soma4.a
+b[0] => sub[0].IN0
+b[1] => sub[1].IN0
+b[2] => sub[2].IN0
+b[3] => sub[3].IN0
+control => sub[0].IN1
+control => sub[1].IN1
+control => sub[2].IN1
+control => sub[3].IN1
+control => somador_completo:soma1.c_in
+s[0] <= somador_completo:soma1.s
+s[1] <= somador_completo:soma2.s
+s[2] <= somador_completo:soma3.s
+s[3] <= somador_completo:soma4.s
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:ax2_mais_b|somador_completo:soma1
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:ax2_mais_b|somador_completo:soma2
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:ax2_mais_b|somador_completo:soma3
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:ax2_mais_b|somador_completo:soma4
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:bx2_somasub_b
+a[0] => somador_completo:soma1.a
+a[1] => somador_completo:soma2.a
+a[2] => somador_completo:soma3.a
+a[3] => somador_completo:soma4.a
+b[0] => sub[0].IN0
+b[1] => sub[1].IN0
+b[2] => sub[2].IN0
+b[3] => sub[3].IN0
+control => sub[0].IN1
+control => sub[1].IN1
+control => sub[2].IN1
+control => sub[3].IN1
+control => somador_completo:soma1.c_in
+s[0] <= somador_completo:soma1.s
+s[1] <= somador_completo:soma2.s
+s[2] <= somador_completo:soma3.s
+s[3] <= somador_completo:soma4.s
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:bx2_somasub_b|somador_completo:soma1
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:bx2_somasub_b|somador_completo:soma2
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:bx2_somasub_b|somador_completo:soma3
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|somador_subtrator_4bits:bx2_somasub_b|somador_completo:soma4
+a => s.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => s.IN1
+b => c_out.IN1
+b => c_out.IN0
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|mux_16x1:over_flow
+a[0] => Mux0.IN15
+a[1] => Mux0.IN14
+a[2] => Mux0.IN13
+a[3] => Mux0.IN12
+a[4] => Mux0.IN11
+a[5] => Mux0.IN10
+a[6] => Mux0.IN9
+a[7] => Mux0.IN8
+a[8] => Mux0.IN7
+a[9] => Mux0.IN6
+a[10] => Mux0.IN5
+a[11] => Mux0.IN4
+a[12] => Mux0.IN3
+a[13] => Mux0.IN2
+a[14] => Mux0.IN1
+a[15] => Mux0.IN0
+control[0] => Mux0.IN19
+control[1] => Mux0.IN18
+control[2] => Mux0.IN17
+control[3] => Mux0.IN16
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|mux_16x1:mux3
+a[0] => Mux0.IN15
+a[1] => Mux0.IN14
+a[2] => Mux0.IN13
+a[3] => Mux0.IN12
+a[4] => Mux0.IN11
+a[5] => Mux0.IN10
+a[6] => Mux0.IN9
+a[7] => Mux0.IN8
+a[8] => Mux0.IN7
+a[9] => Mux0.IN6
+a[10] => Mux0.IN5
+a[11] => Mux0.IN4
+a[12] => Mux0.IN3
+a[13] => Mux0.IN2
+a[14] => Mux0.IN1
+a[15] => Mux0.IN0
+control[0] => Mux0.IN19
+control[1] => Mux0.IN18
+control[2] => Mux0.IN17
+control[3] => Mux0.IN16
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|mux_16x1:mux2
+a[0] => Mux0.IN15
+a[1] => Mux0.IN14
+a[2] => Mux0.IN13
+a[3] => Mux0.IN12
+a[4] => Mux0.IN11
+a[5] => Mux0.IN10
+a[6] => Mux0.IN9
+a[7] => Mux0.IN8
+a[8] => Mux0.IN7
+a[9] => Mux0.IN6
+a[10] => Mux0.IN5
+a[11] => Mux0.IN4
+a[12] => Mux0.IN3
+a[13] => Mux0.IN2
+a[14] => Mux0.IN1
+a[15] => Mux0.IN0
+control[0] => Mux0.IN19
+control[1] => Mux0.IN18
+control[2] => Mux0.IN17
+control[3] => Mux0.IN16
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|mux_16x1:mux1
+a[0] => Mux0.IN15
+a[1] => Mux0.IN14
+a[2] => Mux0.IN13
+a[3] => Mux0.IN12
+a[4] => Mux0.IN11
+a[5] => Mux0.IN10
+a[6] => Mux0.IN9
+a[7] => Mux0.IN8
+a[8] => Mux0.IN7
+a[9] => Mux0.IN6
+a[10] => Mux0.IN5
+a[11] => Mux0.IN4
+a[12] => Mux0.IN3
+a[13] => Mux0.IN2
+a[14] => Mux0.IN1
+a[15] => Mux0.IN0
+control[0] => Mux0.IN19
+control[1] => Mux0.IN18
+control[2] => Mux0.IN17
+control[3] => Mux0.IN16
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|mux_16x1:mux0
+a[0] => Mux0.IN15
+a[1] => Mux0.IN14
+a[2] => Mux0.IN13
+a[3] => Mux0.IN12
+a[4] => Mux0.IN11
+a[5] => Mux0.IN10
+a[6] => Mux0.IN9
+a[7] => Mux0.IN8
+a[8] => Mux0.IN7
+a[9] => Mux0.IN6
+a[10] => Mux0.IN5
+a[11] => Mux0.IN4
+a[12] => Mux0.IN3
+a[13] => Mux0.IN2
+a[14] => Mux0.IN1
+a[15] => Mux0.IN0
+control[0] => Mux0.IN19
+control[1] => Mux0.IN18
+control[2] => Mux0.IN17
+control[3] => Mux0.IN16
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA_JUAN_THALES|seg7_2:dois7segmentos
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN10
+entrada[0] => Mux3.IN10
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN9
+entrada[1] => Mux3.IN9
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN8
+entrada[2] => Mux3.IN8
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+entrada[3] => s[13].DATAIN
+s[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+s[7] <= <VCC>
+s[8] <= <VCC>
+s[9] <= <VCC>
+s[10] <= <VCC>
+s[11] <= <VCC>
+s[12] <= <VCC>
+s[13] <= entrada[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
